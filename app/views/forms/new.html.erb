@@ -1,0 +1,14 @@
+ <div class="intro-text">
+  <%= form_for Form.new do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br />
+
+  <%= f.label :number %>:
+  <%= f.text_field :number %><br />
+
+  <%= f.label :message %>:
+  <%= f.text_area :message %><br />
+
+  <%= f.submit %>
+  <% end %>
+            </div>

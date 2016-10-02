@@ -1,0 +1,282 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 6px;
+    color: #fff;
+    margin-right: 40px;
+}
+
+.btn-toggle {
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-find{
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-start{
+    background-color: #2787cc;
+    border-radius: 6px;
+    color: #fff;
+    margin-right: 40px;
+    margin-top:10px;
+    margin-bottom:20px;
+
+}
+
+.btn-start:hover,
+.btn-start:focus,
+.btn-start:active {
+    color: #fff;
+    background-color: #035895;
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    transform: translateX(250px);
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 670px;
+    background: url('bg.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+
+
+.field{
+    margin-top:10px;
+    padding-top:auto;
+    padding-botton:auto;
+}
+.message {
+  background-color:#faf7f7;
+  height:aut0;
+  margin-top:0;
+  margin-bottom:0;
+
+  padding-top: 30px;
+  padding-right:0;
+  padding-left:0;
+  text-align:center;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.border-form-div .form-heading,
+.border-form-div .checkbox {
+  margin-bottom: 10px;
+}
+.border-form-div input[type="name"],
+.border-form-div input[type="number"],
+.border-form-div input[type="message"]{
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 7px 9px;
+}
+
+.btn-default{
+  background-color: #2787cc;
+  margin-top: 20px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.form-text{
+    font-size: 20px;
+    text-align:center;
+}
+
+.form-heading{
+    font-size: 50px;
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.aboutus{
+    text-align:center;
+    height:aut0;
+    padding-right:20px;
+    padding-left:20px;
+}
+
+.aboutus p{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.footer {
+    background-color:black;
+    height:60px;
+    margin-top:0;   
+    margin-bottom:0;
+
+}
+
+#form_message{
+    width:300px;
+    height:200px;
+}
+
+#form_number,#form_name{
+    width:300px;
+    
+}
+
+.action {
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:20px;
+
+}

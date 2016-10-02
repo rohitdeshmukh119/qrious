@@ -1,0 +1,105 @@
+ <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Qurious</h1>
+            <h2>World’s Largest Students and Alumni network.</h2>
+            <h3>Real Mentorship, Authentic Experiences, Personalised Guidance</h3>
+            <br>
+  
+            <button type="button" class="btn btn-dark btn-lg btn-find">Find Out More</button>
+            <button type="button" class="btn btn-lg btn-start">Get Started</button>
+
+        </div>
+</header>
+
+<div id='aboutus' class='aboutus'>
+	<h2 class="form-heading">About Us</h2>
+	<p> We are the sv;ndvoddnbo'abadv lasd vlsdbvilsbdvkj sdvjk sdv We are the sv;ndvoddnbo'abadv lasd vlsdbvilsbdvkj sdvjk sdvWe are the sv;ndvoddnbo'abadv lasd vlsdbvilsbdvkj sdvjk sdv</p>
+	<p>We are the sv;ndvoddnbo'abadv lasd vlsdbvilsbdvkj sdvjk sdv</p>
+	<p>We are the sv;ndvoddnbo'abadv lasd vlsdbvilsbdvkj sdvjk sdv We are the sv;ndvoddnbo'abadv lasd vlsdbvilsbdvkj sdvjk sdv</p>
+	<p>We are the sv;ndvoddnbo'abadv lasd vlsdbvilsbdvkj sdvjk sdv We are the sv;ndvoddnbo'abadv lasd vlsdbvilsbdvkj sdvjk sdv </p>
+	<p>We are the sv;ndvoddnbo'abadv lasd vlsdbvilsbdvkj sdvjk </p>
+
+
+	<button type="button" class="btn btn-lg btn-start">Get Started</button>
+   
+</div>
+
+<div id= 'message' class="message" class="row">
+  
+  <h2 class="form-heading">What are you Qurious about?</h2>
+
+  <%= form_for Form.new do |f| %>
+
+  <div class="field" >
+  <div class ="form-text">Name</div>
+  <%= f.text_field :name%><br />
+  </div>
+
+  <div class="field">
+  <div class ="form-text">Number</div>
+  <%= f.text_field :number%><br />
+  </div>
+
+  <div class="field">
+  	<div class ="form-text">Message</div>
+  	<%= f.text_area :message %><br />
+  </div>
+
+  <div class="action" font-color="white">
+  <%= f.submit "Submit",class: "btn btn-start btn-lg" %>
+  </div>
+
+  <% end %>
+
+</div>
+
+
+<div class = 'footer'>
+</div>
+
+<script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    $(function() {
+    
+
+    $('.btn-start').click(function() {
+      $('html,body').animate({
+        scrollTop: $(".message").offset().top},
+        1000);
+      });
+
+    $('.btn-find').click(function() {
+      $('html,body').animate({
+        scrollTop: $(".aboutus").offset().top},
+        1000);
+      });
+
+    })(jQuery);
+
+
+   
+    </script>
+
+	<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/57e59509bb785b3a47c91fa8/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+
