@@ -1,5 +1,5 @@
-<%- headers = ['Name', 'Number','Message'] -%>
+<%- headers = ['Name', 'Number','Message','Date'] -%>
 <%= CSV.generate_line headers %>
 <%- @forms.each do |form| -%>
-<%= CSV.generate_line([form.name,form.number,form.message]) -%>
+<%= CSV.generate_line([form.name,form.number,form.message,form.created_at]) -%>
 <%- end -%>
