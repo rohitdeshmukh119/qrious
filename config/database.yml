@@ -21,7 +21,7 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   host: localhost
-  username: psqlrohit
+  username: pguser
   password: psql$123 
   
 development:
@@ -84,5 +84,5 @@ test:
 production:
   <<: *default
   database: qurious_production
-  username: qurious
-  password: <%= ENV['QURIOUS_DATABASE_PASSWORD'] %>
+  username: pguser
+  password: psql$123
